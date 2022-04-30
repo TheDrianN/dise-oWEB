@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Premios Oscar</title>
+    
+    <style>
+        label{ 
+            font-family: Arial;
+        }
+        legend{
+            font-weight: bold;
+            font-family: Arial;
+        }
+        h2{
+            font-weight: bold;
+            font-family: Arial;
+        }
+        body{
+            font-family: Arial;
+            
+        }
+        
+    </style>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="img/encues.ico">
+</head>
+
+<body >
+   
+    <div class="perfil-body" id="Contenendor" >
+
+        <header class="hear">
+            <div class = "logo">
+            <img style="border-radius: 15px;" src="img/oscar.jpg" alt="oscar1" height="100"  width="200">  
+            <h2>Encuesta de cine: Nominadas al Oscar 2022</h2>
+           
+            </div>
+           
+            
+        </header>
+            
+       
+        <form id="formulario1" name="formulario1" method="post" action="data.php" >
+
+           <div class="datos-p">
+            <fieldset id="datos_personales" style="background-color: rgb(#fff);">
+                <legend>Datos Personales</legend>
+               <p> <label class="datosP" for="nombre">Nombre:</label> 
+                <input type="text" name="nombre" id="nombre">
+            </p>
+            </p>
+                <label class="datosP" for="dni">DNI: </label> 
+                <input  type="text" name="dni" id="dni" maxlength="9">
+            </p>
+            </p>
+
+                <label class="datosP" for="edad">Edad:</label>
+                <input type="text" name="edad" id="edad" size="2" maxlength="2">
+            </p>
+            </p>
+                <label for="sexo">Sexo:</label>
+                <select name="sexo" id="sexo" > 
+                    <option value="0" style="font-family: Arial">Seleccionar</option>
+                    <option value="1" style="font-family: Arial" >Mujer</option>
+                    <option value="2" style="font-family: Arial">Hombre</option>
+                </select> 
+            </p>
+            </p>
+
+                <label for="correo">Correo</label> 
+                <input type="email" name="correo" id="correo"  >
+            </p>
+            </fieldset>
+           
+            </div>
+
+            <div class="mejor-peli">
+            <fieldset  id="mejor_pelicula" style="background-color: rgb(#fff);">
+               
+                <legend>Mejor Pelicula</legend>
+                <div class="mejor_pelicula">
+                <img  src="img/your_name.jpg" alt="Your_Name" height="250"  width="200"> <br>
+                <input  type="radio" name="pelicula" value="11"> Your Name <br>
+                <br>
+
+                <img class="img"  src="img/50 sombras.jpg" alt="50_sombras" height="250"  width="200" ><br>               
+                <input type="radio" name="pelicula" value="22"> 50 Sombras de Grey <br>
+                <br>
+
+                <img src="img/spider.jpg" alt="Spider-Man" height="250" width="200" >  <br>
+                <input type="radio" name="pelicula" value="33"> Spider-Man no way home <br>
+                <br>
+
+                <img src="img/hq.jpg" alt="Hasta" height="250" width="200" >  <br>
+                <input type="radio" name="pelicula" value="21"> Hasta que nos volvamos a encontrar <br>
+                <br>
+                <img src="img/byc.jpg" alt="Emboscada" height="250" width="200" >  <br>
+                <input type="radio" name="pelicula" value="22"> Emboscada Final <br>
+            </div>
+            </fieldset>
+            <br>
+         </div>
+
+         <div class="peli-no">
+            <fieldset class="pelicula_no_vistas" id="pelicula_no_vistas" style="background-color: rgb(#fff);">
+                <legend>Selecciona Las pelicuas que no hayas visto</legend>
+                
+                <img src="img/doctor.jpg" alt="doctor" height="250" width="200" >  <br>
+                <input type="checkbox" name="pelicula" value="44"> Doctor Strange <br>
+                <br>
+                <img src="img/jurassic.jpg" alt="jurassic" height="250" width="200" >  <br>
+                <input type="checkbox" name="pelicula" value="55"> Jurassic world Dominion<br>
+                <br>
+                <img src="img/wea.jpg " alt="wea" height="250" width="200" >  <br>
+                <input type="checkbox" name="pelicula" value="66"> El tiempo contigo<br>
+                <br>
+                <img src="img/du.jpg" alt="Dunkerque" height="250" width="200" >  <br>
+                <input type="checkbox" name="pelicula" value="77"> Dunkerque <br>
+                <br>
+                <img src="img/john.jpg" alt="John" height="250" width="200" >  <br>
+                <input type="checkbox" name="pelicula" value="88"> John wick 3 <br>
+            </fieldset>
+            <br>
+          </div>
+
+          <div class="argumento">
+            <fieldset id="grupo_argumento" style="background-color: rgb(#fff);">
+                <legend>Arguemto de tu película preferida</legend>
+                <textarea name="argumento" id="argumento" cols=100" rows="14"></textarea>
+            </fieldset>
+          </div>
+            <br>
+            <input type="reset" value="Borrar Formulario">
+            <input type="submit" value="Enviar"  >
+
+
+        </form>
+
+    </div>
+</body>
+</html>
