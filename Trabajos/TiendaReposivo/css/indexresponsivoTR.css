@@ -1,0 +1,265 @@
+body{
+    margin: 0%;
+}
+.grid{
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 35px 1fr 250px 100px;
+    grid-template-areas: "my-header"
+    "my-nav" "my-section" "my-aside" 
+     "my-footer";
+}
+main{
+    color: #fff;
+    font-family: Arial;
+    
+}
+
+header{
+    background-color: #fff;
+    grid-area: my-header;
+
+}
+
+.cabeza{
+    background-color: #fff;
+    color: #0069c0;
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: 290px 300px;
+    grid-template-areas: "my-titulo my-icon";
+
+}
+
+
+.titulo{
+    font-size: 22px;
+    grid-area: "my-titulo";
+    padding-top: 13px;
+    padding-left: 8px;
+}
+.img{
+    height: 70px;
+    width: 70px;
+   grid-area: "my-icon";
+   padding-top: 20px;
+    
+}
+
+nav{
+    background-color: #2196f3;
+    grid-area: my-nav;
+    
+}
+
+.menu{
+    display: flex;
+    font-size: 15px;
+    
+    
+}
+.m-t{
+    padding-left: 3%;
+    padding-top: 2%;
+    text-decoration: none;
+    font-family: Arial;
+    color: #fff;
+    
+}
+
+section{
+    background-color: #97e9ff;
+    grid-area: my-section;
+    
+}
+
+
+.contenido{
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 5%;
+    text-align: center;
+    width: 350px;
+}
+
+.celular,.chips,.reparacion{
+    padding:5%;
+    
+}
+.im{
+    height: 300px;
+    width: 200px;
+  
+    
+}
+.con{
+    font-size: 20px;
+    color: #0069c0;
+    
+    
+}
+.s-con{
+    font-size: 13px;
+    color: #0cb7f2;
+    
+}
+.s-con1{
+    font-size: 16px;
+    color: #f20c0c;
+    
+}
+.rev{
+    font-family: Arial;
+    color: #0cb7f2;
+}
+
+
+aside{
+    background-color: #0979b0;
+    grid-area: my-aside;
+}
+.otros{
+   padding: 10px;
+}
+
+.redes{
+       
+    text-align: center;
+    
+}
+
+.rede{
+    height: 50px;
+    
+    width: 50px;
+
+}
+
+footer{
+    background-color: #004173;
+    grid-area: my-footer;
+}
+.foo{
+    font-size: 15px;
+    text-align: center;
+}
+
+@media(min-width: 600px) and (max-width:1000px){
+    
+    .grid{
+        grid-template-columns: 70% 30%;
+    grid-template-rows: 150px 50px 1fr 100px;
+    grid-template-areas: "my-header my-header"
+    "my-nav my-nav"" my-section my-aside" 
+     "my-footer my-footer";
+    }
+    .m-t{
+        padding-left: 30px;
+        padding-top: 15px;
+        font-size: 19px;
+    }
+
+    .cabeza{
+        grid-template-rows: 100px;
+        grid-template-columns: 500px 100px;
+    }
+
+    .titulo{
+        font-size: 35px;
+    }
+    .img{
+        height: 90px;
+        width: 90px;
+        padding-top: 30px;
+
+    }
+}
+
+@media(min-width: 1001px){
+    
+    .grid{
+     grid-template-columns: 200px 1fr 200px;
+     grid-template-rows: 200px 1fr 100px;
+     grid-template-areas: " my-header my-header my-header"
+     "my-nav my-section my-aside" 
+     "my-footer my-footer  my-footer";
+    }
+  
+    .menu{
+       display: grid;
+       padding: 10%;
+    }
+
+    .m-t{
+        font-size: 25px;
+        padding-bottom: 15%;
+    }
+    .cabeza{
+        
+        grid-template-rows: 200px;
+        grid-template-columns: 900px 100px;
+       padding-left: 20%;
+       
+    }
+
+    .titulo{
+        font-size: 60px;
+        padding-top: 0%;
+    }
+    .img{
+        height: 190px;
+        width: 200px;
+        padding-top: 3%;
+    }
+    .Caja{
+        display: flex;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-bottom: 1%;
+    }
+    .contenido{
+        height: 405px;
+        width: 330px;
+        margin: 1%;
+        
+    }
+    .celular{
+        padding: 0px;
+       
+
+    }
+
+    .im{
+        height: 200px;
+        width: 200px;
+    }
+    .con{
+        font-size: 20px;
+        color: #0069c0;
+        
+    }
+    .s-con{
+        font-size: 15px;
+        color: #0cb7f2;
+        
+    }
+    .s-con1{
+        font-size: 19px;
+        color: #f20c0c;
+    }
+    .redes{
+       
+        text-align: center;
+        
+    }
+
+    .rede{
+        height: 50px;
+        
+        width: 50px;
+
+    }
+
+    
+}

@@ -1,16 +1,24 @@
 body{
     font-family: Arial;
+    margin: 0px;
+    padding: 0px;
    
+}
+*{
+    margin: 0px;
+    padding: 0px;
 }
 #encabezado{ 
     background-color:  red;
+  
     margin-bottom: 0px; 
     height: 80px;
 }
 
 #ad{  
     display: flex;
-    background-color: gray;   
+    background-color: gray;
+
 }
 
 
@@ -39,7 +47,10 @@ body{
 }
 
 #caja1{
+    margin-top: 20px;
 background-color: #fff;
+padding-left: 20px;
+padding-right: 20px;
 }
 
 #subti{
@@ -48,16 +59,18 @@ color: red;
 font-size: 15px;
 }
 #subti1{
+    
     margin: 0px;
     }
 
 #caja2{
+    margin-top: 20px;
    width: 400px;
    height: 200px;
    float: right;
 }
 #caja3{
-    
+    margin-top: 10px;
    margin-bottom: 0px;
    color: gray;
    font-size: 20px;

@@ -1,0 +1,36 @@
+main{
+    color: #fff;
+    font-family: Arial;
+}
+
+header{
+background-color: blueviolet;
+height: 300px;
+
+}
+
+nav{
+    background-color: cornflowerblue;
+    width: 15%;
+}
+
+section{
+    background-color: indigo;
+    width: 70%;
+}
+
+aside{
+    background-color: darkmagenta;
+    width: 15%;
+}
+
+footer{
+    background-color: darkorchid;
+    height: 220px;
+    clear: left;
+}
+
+nav,aside,section{
+    float: left;
+    height: 440px;
+}
