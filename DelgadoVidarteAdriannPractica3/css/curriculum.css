@@ -1,0 +1,345 @@
+body{
+    margin: 0%;
+}
+.grid{
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 85% 15%;
+    grid-template-rows: 200px 50px 800px 150px 50px;
+    grid-template-areas: "my-header my-header"
+    "my-nav my-nav"" my-section my-aside" 
+     "my-footer my-footer" "foos foos";
+}
+
+main{
+    font-family: Arial;   
+}
+
+header{
+    background-color: #205072;
+    grid-area: my-header;
+    color: #fff;
+}
+
+.imagen{
+    height: 150px;
+    width: 150px;
+    float: left;
+    margin: 20px;
+    border-radius: 20px;
+}
+.inicio{
+    float:right;
+    padding-top: 20px;
+    padding-right: 20px;
+    text-decoration:none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.texto{
+    float: left;
+    padding-left: 30px;
+    padding-top: 10px;
+    font-size: 40px;
+}
+
+
+nav{
+    background-color: #329d9c;
+    grid-area: my-nav;
+    
+}
+
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.menu li a{
+    display: block;
+    padding: 15px 150px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.menu li:hover{
+    background: rgb(0,0,0,0.3);
+}
+
+
+
+section{
+    background-color: #cff4d2;
+    grid-area: my-section;
+}
+
+.contenido{
+    background-color: #56c596;
+    border-radius: 20px;
+    height: 93%;
+    width: 97%;
+    margin-left: 10px;
+    
+}
+.contenido h1{
+    font-style: italic;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.contenido p{
+    padding-left: 30px;
+    padding-right: 10px;
+}
+
+.dape{
+    text-align: start;
+    list-style: none;
+    
+}
+
+.container{
+    width: 500px;
+    padding-left: 30px;
+    overflow-x: auto;
+}
+table{
+    width: 100%;
+    background-color: #fff;
+    text-align: left;
+    border-collapse: collapse;
+    
+}
+th,td{
+    padding: 10px;
+}
+thead{
+    background-color: #246355;
+    border-bottom: solid 5px #0f462d;
+    color: #fff;
+}
+
+tr:nth-child(even){
+    background-color: #ddd;
+}
+
+aside{
+    background-color: #56c596;
+    grid-area: my-aside;
+    color: #fff;
+}
+
+.Otros div{
+    text-align: center;
+    background-color: #205072;
+    border-radius: 20px;
+    margin: 20px;
+ }
+ 
+ .Otros ul{
+     list-style: none;
+     padding: 0;
+     
+ }
+ 
+ .Otros li{
+     text-align: left;
+     font-size: 20px;
+     text-align: center;
+ }
+ .Otros h1{
+     padding-top: 10px; 
+     font-size: 30px;
+ }
+ .Otros li a{
+     color: #ccabdb;
+     text-decoration: none;
+ }
+ .Otros li:hover{
+     background: rgb(0,0,0,0.3);
+ }
+ 
+footer{
+    background-color: #205072;
+    grid-area: my-footer;
+    display: flex;
+    color: #fff;
+}
+.imagen2{
+    height: 125px;
+    width: 125px ;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+.s-f div{
+   padding-left: 90px;
+}
+.s-f h1{
+    font-size: 20px;
+}
+
+.s-f ul{
+    list-style: none;
+    padding: 0;
+}
+
+.s-f li{
+    font-size: 15px;
+    color: #fff;
+    text-align: left;
+}
+.s-f a{
+    text-decoration: none;
+    color: #ccabdb;
+}
+
+
+
+.s-f li:hover{
+    background: rgb(0,0,0,0.3);
+}
+.foos{
+    color: #205072;
+    text-align: center;
+    background-color: black;
+    grid-area: foos;
+}
+@media(min-width: 300px) and (max-width:599px){
+    .grid{
+        grid-template-columns: 100%;
+        grid-template-rows:250px 35px 1100px 450px 775px 90px;
+        grid-template-areas: "my-header"
+        "my-nav" "my-section" "my-aside" 
+         "my-footer" "foos";
+    }
+
+    header{
+       
+        display: grid;
+    }
+
+    .imagen{
+        height: 35%;
+        width: 25%;
+        border-radius: 20px;
+        float: left;     
+    }
+    .inicio{
+        text-decoration:none;
+        color: #fff;
+        font-size: 20px;
+        float: right;
+    }
+    
+    .texto{
+        padding-top: 0;
+        font-size: 20px;
+        clear: left;
+    }
+
+    .menu ul{
+    margin: 0;
+    padding: 0;
+    }
+    .menu li a{
+       font-size: 15px;
+       padding: 10px 15px;
+
+    }
+    .contenido{
+        margin: 1%;
+        height: 90%;
+    }
+    .container{
+        width: 98%;
+        padding-left: 3px;
+
+    }
+  
+
+   
+    .s-f{
+        display: grid;    
+    }
+
+    .s-f p{
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    .foos{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media(min-width: 600px) and (max-width:1000px){
+    .grid{
+        grid-template-columns: 70% 30%;
+    grid-template-rows: 180px 50px 950px 200px 100px;
+    grid-template-areas: "my-header my-header"
+    "my-nav my-nav"" my-section my-aside" 
+     "my-footer my-footer" "foos foos";
+    }
+
+    
+
+    .imagen{
+        height: 150px;
+        width: 150px;
+        border-radius: 20px;
+        float: left;  
+        padding-right: 0;   
+    }
+    .inicio{
+        text-decoration:none;
+        color: #fff;
+        font-size: 20px;
+        float: right;
+    }
+    
+    .texto{
+        padding-top: 55px;
+        padding-left: 0;
+        font-size: 20px;
+        
+    }
+
+    .menu ul{
+    margin: 0;
+    padding: 0;
+    }
+    .menu li a{
+        font-size: 20px;
+       padding: 15px 35px;
+       
+    }
+
+    .contenido{
+        margin: 1%;
+        height: 95%;
+    }
+    .container{
+        width: 90%;
+    }
+ 
+   
+
+    .s-f div{
+        padding-left: 5%;
+        width: 200px;
+    }
+   
+    .s-f h1{
+        font-size: 15px;
+    }
+
+    .foos{
+        width: 100%;
+        height: 100%;
+    }
+
+}
