@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <title>ThunDer Store</title>
+</head>
+<body>
+    <header>
+       <div class="contenedor">
+         <h2 class="logo">ThunDer Store</h2>
+         <nav>
+            <a href="#" class="activo">Inicio</a>
+            <a href="#">Catalogo</a>
+            <a href="#">Productos Nuevos</a>
+            <a href="#">Mas Vendidos</a>
+            <div class="submenu">
+                <a href="#" onmouseover="showCart(this)" id="butt"><i class="fa-solid fa-cart-shopping"></i></a>
+                <p class="count-product">0</p>
+                <div class="cart-products" id="products-id" >
+                    <p class="close-btn" onclick="closeBtn()" >X</p>
+                    <h3>Mi carrito</h3>
+                    <div class="card-items">
+                      <div class="item">
+                      </div>
+                    </div>
+                    <h2>Total: S/ <strong class="price-total">0</strong></h2>
+                </div>
+            </div>
+          </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="celular-principal">
+           <div class="contenedor">
+               <h3 class="titulo">Iphone 14 pro</h3>
+               <p class="descripcion">El Apple iPhone 13 Pro Max mejora a su predecesor con una tasa de refresco de pantalla de 120Hz, el nuevo procesador Apple A15 Bionic y mejoras en sus cámaras. Con una pantalla OLED de 6.7 pulgadas a resolución FHD+, el iPhone 13 Pro Max está disponible con opciones de almacenamiento de 128GB, 256GB, 512GB y 1TB.
+                La cámara cuádruple llega con tres lentes de 12MP y un sensor ToF 3D que integra estabilización óptica de imagen y zoom 3x, y su cámara selfie es de 12MP. 
+               </p>
+               <button role="button" class="boton"><i class="fa-solid fa-cart-shopping"></i>Separar</button>
+               <button role="button" class="boton"><i class="fa-solid fa-circle-info"></i>Especificaciones</button>
+           </div>
+        </div>
+
+        <div class="celulares-recomendados contenedor">
+            <div class="contenedor-titulo-controles">
+                <h3>Celulares Tops</h3>
+                <div class="indicadores">
+                </div>
+            </div>
+            <div class="contenedor-principal">
+                <button role="button" id="flecha-izquierda" class="flecha-izquierda" ><i class="fa-solid fa-angle-left"></i></button>
+                <div class="contenedor-carousel">
+                    <div class="carousel">
+                        <div class="celular">
+                            <a href="#" ><img class="item-image" src="./img/1.jpg" alt=""></a>
+                            <h3 class="title">GOOGLE PIXEL 6a</h3>
+                            <h3 class="precio">2200.00</h3>
+                            <button role="button" class="boton-add" data-id="1"><i class="fa-solid fa-cart-shopping" ></i>Comprar</button>
+                        </div>
+                        <div class="celular">
+                            <a href="#"> <img class="item-image"  src="./img/2.jpg" alt=""></a>
+                            <h3 class="title">GALAXY Z Flip 3 5G</h3>
+                            <h3 class="precio">4499.00</h3>
+                            <button role="button" class="boton-add" data-id="2"><i class="fa-solid fa-cart-shopping" ></i>Comprar</button>
+                        </div>
+                        <div class="celular">
+                            <a href="#"> <img class="item-image" src="./img/3.jpg" alt=""></a>
+                            <h3 class="title">HUAWEI P50 Pro</h3>
+                            <h3 class="precio">3899.00</h3>
+                            <button role="button" class="boton-add" data-id="3"><i class="fa-solid fa-cart-shopping" ></i>Comprar</button>
+                        </div>
+                        <div class="celular">
+                            <a href="#"> <img c class="item-image" src="./img/4.jpg" alt=""></a>
+                            <h3 class="title">IPHONE 12</h3>
+                            <h3 class="precio">3000.00</h3>
+                            <button role="button" class="boton-add" data-id="4"><i class="fa-solid fa-cart-shopping" ></i>Comprar</button>
+                        </div>
+                        <div class="celular">
+                            <a href="#" > <img   class="item-image" src="./img/5.jpg" alt=""></a>
+                            <h3 class="title">IPHONE 12 pro</h3>
+                            <h3 class="precio">3500.00</h3>
+                            <button role="button" class="boton-add" data-id="5"><i class="fa-solid fa-cart-shopping" ></i>Comprar</button>
+                        </div>
+                        <div class="celular">
+                            <a href="#"> <img  class="item-image"  src="./img/6.jpg" alt=""></a>
+                            <h3 class="title">SAMSUNG GALAXY A52S 5G</h3>
+                            <h3 class="precio">1599.90</h3>
+                            <button role="button" class="boton-add" data-id="6"><i class="fa-solid fa-cart-shopping" ></i>Comprar</button>
+                        </div>
+                        <div class="celular">
+                            <a href="#"> <img  class="item-image" src="./img/7.jpg" alt=""></a>
+                            <h3 class="title">SAMSUNG GALAXY S20 FE</h3>
+                            <h3 class="precio">2099.90</h3>
+                            <button role="button" class="boton-add"  data-id="7"><i class="fa-solid fa-cart-shopping"></i>Comprar</button>
+                        </div>
+                        <div class="celular">
+                            <a href="#"> <img  class="item-image" src="./img/8.jpg" alt=""></a>
+                            <h3 class="title">XIAOMI REDMI K40</h3>
+                            <h3 class="precio">1999.90</h3>
+                            <button role="button" class="boton-add" data-id="8"><i class="fa-solid fa-cart-shopping" ></i>Comprar</button>
+                        </div>
+                        <div class="celular">
+                            <a href="#"> <img class="item-image" src="./img/9.jpg" alt=""></a>
+                            <h3 class="title">XIAOMI POCO M4 PRO 5G</h3>
+                            <h3 class="precio">949.90</h3>
+                            <button role="button" class="boton-add" data-id="9"><i class="fa-solid fa-cart-shopping" ></i>Comprar</button>
+                        </div>
+                        <div class="celular">
+                            <a href="#"> <img class="item-image" src="./img/10.jpg" alt=""></a>
+                            <h3  class="title">XIAOMI REDMI 10</h3>
+                            <h3  class="precio">649.90</h3>
+                            <button role="button" class="boton-add" data-id="10"><i class="fa-solid fa-cart-shopping"></i>Comprar</button>
+                        </div>
+
+                    </div>
+                </div>
+                <button role="button" id="flecha-derecha" class="flecha-derecha" ><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        
+         function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/0ea696cd02.js" crossorigin="anonymous"></script>   
+    <script src="js/main.js"></script>
+</body>
+</html>
