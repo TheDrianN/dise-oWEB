@@ -1,0 +1,524 @@
+:root{
+    --rojo: #e50914;
+    --fondo: #141414;
+    --gray: #797d7f;
+}
+
+/*Music*/
+
+
+.music #music-id{
+    position: absolute;
+    display: none;
+    right: 100px;
+    top: 7%;
+    z-index: 2;
+}
+.lista-song{
+   display: none;
+   
+   
+}
+.btn-lista:hover ul{
+    display: block;
+}
+.btn-lista:hover{
+    width: 100px;
+    height: 100px;
+}
+.music:hover #music-id{
+    display: block;
+    position:absolute;
+    right: 100px;
+    top: 7%;
+    z-index: 2;
+}
+
+.contenedor-music{
+    background-color: #e0e5ec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 550px;
+    border-radius: 12px;  
+}
+
+
+.player{
+    width: 300px;
+    height: 550px;
+    background-color: #e0e5ec ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    box-shadow: 9px 9px 16px rgb(163 177 198 / 30%), -9px -9px 16px rgb(255 255 255 / 30%);
+}
+
+.player_controls{
+    display: flex;
+    width: 95%;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    
+}
+.player_btn{
+    cursor: pointer;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: -8px -8px 20px 0px #fff9, -6px -6px 6px 0px #fff9, 8px 8px 20px #0001, 5px 5px 6px 0px #0001;
+    color: var(--gray);
+}
+
+.player_btn:active{
+    box-shadow: inset -8px -8px 20px #fff9, inset -5px -5px 6px #fff9,
+     inset 8px 8px 20px #0003, inset 5px 5px 6px #0001;
+}
+.player_btn--small{
+    min-width: 50px;
+    min-height: 50px;
+}
+
+.player_title{
+    font-weight: 600;
+    font-size: 0.8em;
+    color: #a1a1a1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.player_album{
+    width: 250px;
+    padding-left: 15%;
+    
+}
+
+.player_img{
+    border-radius: 50%;
+    
+    box-shadow: 2px 2px 7px rgb(163 177 198), -2px -2px 7px 
+    rgb(163 177 198), -8px -8px 50px rgb(255 255 255 / 80%),
+     3px 3px 25px rgb(0 0 0 / 60%);
+     
+}
+
+.player_artist{
+    font-size: 1.2em;
+    font-weight: 500;
+    opacity: 0.5;
+    margin: 20px 0px 0px 0px;
+}
+.player_song{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1em;
+    opacity: 0.5;
+    margin: 0;
+}
+
+.player_level{
+    width: 
+    80%;
+    -webkit-appearance: none;
+    outline: none;
+    border: none;
+    padding: 0;
+    margin-top: 40px;
+}
+.player_level::-webkit-slider-runnable-track{
+    background-color: #d7dbdd;
+    height: 6px;
+    border-radius: 3px;
+}
+
+.player_level::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    border-radius: 100%;
+    background-color: #5c87fe;
+    height: 18px;
+    width: 18px;
+    margin-top: -7px;
+}
+
+.audio-duration{
+    margin-top: -30px;
+    display: flex;
+    width: 78%;
+    font-size: 10px;
+    font-weight: 600;
+    color: #a1a1a1;
+    letter-spacing: 1px;
+}
+.start{
+    flex: 1;
+}
+.player_audio{
+    visibility: hidden;
+}
+
+.player_btn--medium{
+    min-height: 70px;
+    min-width: 70px;
+}
+.blue{
+    background-color: #5c87fe;
+    color: #fff;
+}
+
+.hiden{
+    display: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--fondo);
+    font-family: 'Open Sans', sans-serif;
+}
+.contenedor{
+    width: 90%;
+    margin: auto;
+}
+header{
+    padding: 30px 0;
+}
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    font-family: 'Bebas Neue', cursive;
+    font-weight: normal;
+    color: var(--rojo);
+    font-size: 40px;
+}
+header nav{
+    display: flex;
+}
+header nav a{
+    color: #aaa;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+header nav a:hover,
+header nav a.activo{
+    color: #fff;
+}
+
+.count-product{
+    position: absolute;
+    top: -14px;
+    right: 20px;
+    background-color: rgb(255, 2, 2);
+    padding: 1px 6px;
+    border-radius: 50%;
+    color: #fff;
+    font-weight: 700;
+    font-family: system-ui;
+    line-height: 18px;
+}
+
+.submenu{
+    position: relative;
+}
+/* -CARRITO--*/
+.submenu #products-id{
+    position: absolute;
+    display: none;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 20%);
+    padding: 10px 18px;
+    top: 82px;
+    right: -18px;
+    box-shadow: 9px 9px 16px rgb(163 177 198 / 30%), -9px -9px 16px rgb(255 255 255 / 30%);
+    border-radius: 15px;
+    
+}
+.submenu:hover #products-id{
+    display: block;
+    position:absolute;
+    right: 0;
+    top: 100%;
+    z-index: 1;
+    background-color: #fff;
+    min-height: 400px;
+    min-width: 300px;
+    
+}
+
+
+.cart-products .item img{
+    width: 100px;
+}
+
+.cart-products .item{
+    display: flex;
+    align-items: center;
+    border-bottom: solid 2px rgb(0, 0, 0);
+}
+.cart-products .item .item-content{
+    margin: 0 19px;
+    width: 201px;
+}
+.cart-products .item .item-content h5{
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: system-ui;
+    color: #a1a1a1;
+}
+.cart-products .item .item-content h6{
+    margin: 0;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: system-ui;
+    color: #a1a1a1;
+}
+.cart-products .item span{
+    background-color: rgb(0, 0, 0);
+    padding: 0px 5px;
+    border-radius: 50%;
+    color: #fff;
+    font-family: system-ui;
+    cursor: pointer;
+}
+.cart-products h3{
+    margin-bottom: 0;
+    color: #a1a1a1;
+}
+
+.cart-products .item .item-content h5.cart-price{
+    font-weight: 700;
+}
+.close-btn{
+    top: -4px;
+    right: 6px;
+    cursor: pointer;
+    color: #000;
+    top: 10px;
+    float: right;
+    
+}
+
+
+
+/*------Celular-----*/
+.celular-principal{
+    font-size: 16px;
+    min-height: 40.62em;
+    color: #fff;
+    background: linear-gradient(rgba(0, 0, 0 ,.50) 0%, rgba(0, 0, 0, .50) 100%), url(../img/fond.png);
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 3.12em;
+    display: flex;
+    align-items: end;
+}
+
+.celular-principal .contenedor{
+    margin: 0 auto;
+    margin-bottom: 6.23em;
+}
+
+.celular-principal .titulo{
+    font-weight: 600;
+    font-size: 3.12em;
+    margin-bottom: 0.4em;
+}
+.celular-principal .boton{
+    background: rgba(0,0,0, 0.5);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    color: #fff;
+    margin-right: 1.25em;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+}
+
+.celular-principal .boton:hover{
+    background: #fff;
+    color: #000;
+}
+
+.celular-principal .boton i{
+    margin-right: 1.25em;
+}
+
+.celular-principal .descripcion{
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.75em;
+    max-width: 50%;
+    margin-bottom: 1.25em;
+}
+
+/*--titulo y controles--*/
+.contenedor-titulo-controles{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.contenedor-titulo-controles h3{
+    color: #fff;
+    font-size: 30px;
+}
+
+.contenedor-titulo-controles .indicadores button{
+    background: #fff;
+    height: 3px;
+    width: 10px;
+    cursor: pointer;
+    border: none;
+    margin-right: 2px;
+}
+
+.contenedor-titulo-controles .indicadores button:hover,
+.contenedor-titulo-controles .indicadores button.activo{
+    background: red;
+}
+
+/*--celulares----*/
+
+.celulares-recomendados{
+    margin-bottom: 70px;
+
+}
+
+.celulares-recomendados .contenedor-principal{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.celulares-recomendados .contenedor-principal .flecha-izquierda,
+.celulares-recomendados .contenedor-principal .flecha-derecha{
+    position: absolute;
+    border: none;
+    background: rgba(0, 0, 0, 0.3);
+    font-size: 40px;
+    height: 50%;
+    top: calc(50% -25%);
+    line-height: 40px;
+    width: 50px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 500;
+    transition: .2s ease all;
+}
+
+.celulares-recomendados .contenedor-principal .flecha-izquierda{
+    left: 0;
+}
+.celulares-recomendados .contenedor-principal .flecha-derecha{
+    right: 0;
+}
+
+.celulares-recomendados .contenedor-principal .flecha-izquierda:hover,
+.celulares-recomendados .contenedor-principal .flecha-derecha:hover{
+    background: rgba(0, 0, 0, .9);
+}
+
+/*------carousel*/
+
+.celulares-recomendados .contenedor-carousel{
+    width: 100%;
+    height: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.celulares-recomendados .contenedor-carousel .carousel{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.celulares-recomendados .contenedor-carousel .carousel .celular{
+    min-width: 20%;
+    transition: .3s ease all;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .3);
+
+}
+
+.celulares-recomendados .contenedor-carousel .carousel .celular img{
+    width: 100%;
+   height: 70%;
+    vertical-align: top;
+}
+
+.celulares-recomendados .contenedor-carousel .carousel .celular.hover{
+    transform: scale(1.2);
+    transform-origin: center;
+}
+
+.celulares-recomendados .contenedor-carousel .carousel .celular h3{
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.celulares-recomendados .contenedor-carousel .carousel .celular .boton-add{
+    background: rgba(0,0,0, 0.5);
+    border: none;
+    border-radius: 0.31em;
+    padding: 0.93em 1.87em;
+    color: #fff;
+    margin-left: 5em;
+    cursor: pointer;
+    transition: .3s ease all;
+    font-size: 1.12em;
+}
+.celulares-recomendados .contenedor-carousel .carousel .celular .boton-add:hover{
+    background: #fff;
+    color: #000;
+}
+
+/*----Medias---*/
+@media screen and (max-width: 800px) {
+  header .logo{
+      margin-bottom: 10px;
+      font-size: 30px;
+  }
+  
+  header .contenedor{
+      flex-direction: column;
+      text-align: center;
+  }
+  .celular-principal{
+      font-size: 14px;
+  }
+
+  .celulares-recomendados .contenedor-carousel{
+      overflow: visible;
+  }
+  .celulares-recomendados .contenedor-carousel .carousel{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 20px;
+  }
+
+  .celulares-recomendados .indicadores,
+  .celulares-recomendados .flecha-izquierda,
+  .celulares-recomendados .flecha-derecha{
+      display: none;
+  }
+  
+
+} 

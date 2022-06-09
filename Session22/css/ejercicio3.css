@@ -1,0 +1,33 @@
+.animado{
+    width: 20%;
+    transition: all 1s;
+    clip-path: polygon(0 0,100% 0, 100% 100%,0 100%);
+    animation: desplazamiento 2s ease;
+}
+
+.animado:hover{
+    clip-path: polygon(50% 0,100% 50%, 50% 100%,0 50%);
+    
+}
+
+@keyframes desplazamiento{
+    from{transform: translateX(10000px);}
+    to{transform: translateX(0px);}
+}
+
+
+
+p{
+    animation-duration:3s ;
+    animation-name: slidein;
+}
+@keyframes slidein{
+from{
+    margin-left:100% ;
+    width: 300%;
+}
+to{
+    margin-left:0% ;
+    width: 100%;
+}
+}
