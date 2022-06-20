@@ -1,84 +1,5 @@
-/*Audio */
-const audio = document.getElementById("audio");
-const playPause = document.getElementById("play");
-
-playPause.addEventListener("click",()=>{
-    if(audio.paused || audio.ended){
-        playPause.querySelector(".pause-btn").classList.toggle("hide");
-        playPause.querySelector(".play-btn").classList.toggle("hide");
-        audio.play();
-    }else{
-        audio.pause();
-        playPause.querySelector(".pause-btn").classList.toggle("hide");
-        playPause.querySelector(".play-btn").classList.toggle("hide");
-    }
-});
-
-
-/*caruosel*/
-const fila = document.querySelector('.contenedor-carousel');
-const  celulares= document.querySelectorAll('.celular');
-
-
-const flechaIzquierda =  document.getElementById('flecha-izquierda');
-const flechaDerecha =  document.getElementById('flecha-derecha');
-
-
-flechaDerecha.addEventListener('click', () => {
-    fila.scrollLeft += fila.offsetWidth;
-
-    const indicadorActivo =  document.querySelector('.indicadores .activo');
-    if(indicadorActivo.nextSibling){
-        indicadorActivo.nextSibling.classList.add('activo');
-        indicadorActivo.classList.remove('activo');
-    }
-});
-
-flechaIzquierda.addEventListener('click', () => {
-    fila.scrollLeft -= fila.offsetWidth;
-
-    const indicadorActivo =  document.querySelector('.indicadores .activo');
-    if(indicadorActivo.previousSibling){
-        indicadorActivo.previousSibling.classList.add('activo');
-        indicadorActivo.classList.remove('activo');
-    }
-});
-
-
-const numeroPaginas = Math.ceil(celulares.length /5);
-for(let i=0; i<numeroPaginas;i++){
-    const indicador =  document.createElement('button');
-
-    if (i ===0 ) {
-        indicador.classList.add('activo');
-    }
-    document.querySelector('.indicadores').appendChild(indicador);
-    indicador.addEventListener('click',(e)=>{
-        fila.scrollLeft=i *  fila.offsetWidth;
-        
-        document.querySelector('.indicadores .activo').classList.remove('activo');
-        e.target.classList.add('activo');
-    })
-}
-
-celulares.forEach((celular) =>{
-    celular.addEventListener('mouseenter', (e) =>{
-        const elmento= e.currentTarget;
-        setTimeout(()=>{
-            celulares.forEach(celular => celular.classList.remove('hover'));
-            elmento.classList.add('hover');
-        },300);
-    });
-});
-
-
-fila.addEventListener('mouseleave',()=>{
-    celulares.forEach(celular => celular.classList.remove('hover'));
-})
-/*---Car */
-
 /* carrito */
-let allcontainerCart = document.querySelector('.carousel');
+let allcontainerCart = document.querySelector('.carousel-products');
 let buythings = [];
 let priceTotal = document.querySelector('.price-total');
 let containerBuyCart= document.querySelector('.card-items');
@@ -94,14 +15,13 @@ function loadEventListenrs(){
 
 function addProduct(e){
     e.preventDefault();
-    if(e.target.classList.contains('boton-add')){
-        
+    if(e.target.classList.contains('btn-add-cart')){
         const selectProduct = e.target.parentElement;
         readTheContent(selectProduct);
+        
     }
    
 }
-
 function deleteProduct(e){
     if(e.target.classList.contains('delete-product')){
         const deleteId= e.target.getAttribute('data-id');
@@ -120,18 +40,16 @@ function deleteProduct(e){
 }
 
 
-
 function readTheContent(product){
     const infoProduct = {
         image: product.querySelector('.item-image').src,
         title: product.querySelector('.title').textContent,
         price: product.querySelector('.precio').textContent,
-       
+        code: product.querySelector('.codigo').textContent,
+        stock: product.querySelector('.stock').textContent,
         id: product.querySelector('button').getAttribute('data-id'),
         amount:1
-
     }
-
     totalCard =  parseFloat(totalCard) + parseFloat(infoProduct.price);
     totalCard = totalCard.toFixed(2);
 
@@ -158,14 +76,18 @@ function readTheContent(product){
 function loadHtml(){
     clearHtml();
     buythings.forEach(product =>{
-        const{image,title,price,amount, id}=product;
+        const{image,title,price,code,amount, id}=product;
         const row = document.createElement('div');
         row.classList.add('item'),
         row.innerHTML=`
         <img src="${image}">
         <div class="item-content"> 
-        <h5>${title}</h5>
-        <h5 class="cart-price">${price}</h5>
+        <h5 >${title}</h5>
+        <hr style="margin: 0;">
+        <h4 class="cart-price">Precio:${price}</h4>
+        <hr style="margin: 0;">
+        <h6> Codigo:${code}</h6>
+        <hr style="margin: 0;">
         <h6> Cantidad:${amount}</h6>
        </div>
        <span class="delete-product" data-id="${id}">X</span>       
@@ -177,9 +99,77 @@ function loadHtml(){
     });
    
 }
-
 function clearHtml(){
     containerBuyCart.innerHTML='';
     amountProduct.innerHTML="0";
     priceTotal.innerHTML="0";
 }
+
+
+/*carrito */
+const fila = document.querySelector('.contenedor-carousel');
+const productos= document.querySelectorAll('.producto');
+
+
+const flechaIzquierda =  document.getElementById('flecha-izquierda');
+const flechaDerecha =  document.getElementById('flecha-derecha');
+
+const fila2 = document.querySelector('.contenedor-carousel2');
+const flechaIzquierda2 =  document.getElementById('flecha-izquierda2');
+const flechaDerecha2 =  document.getElementById('flecha-derecha2');
+
+const fila3 = document.querySelector('.contenedor-carousel3');
+const flechaIzquierda3 =  document.getElementById('flecha-izquierda3');
+const flechaDerecha3 =  document.getElementById('flecha-derecha3');
+
+flechaDerecha.addEventListener('click', () => {
+    fila.scrollLeft += fila.offsetWidth;
+
+    
+});
+
+flechaIzquierda.addEventListener('click', () => {
+    fila.scrollLeft -= fila.offsetWidth;
+
+    
+});
+flechaDerecha2.addEventListener('click', () => {
+    fila2.scrollLeft += fila2.offsetWidth;
+
+    
+});
+
+flechaIzquierda2.addEventListener('click', () => {
+    fila2.scrollLeft -= fila2.offsetWidth;
+
+    
+});
+flechaDerecha3.addEventListener('click', () => {
+    fila3.scrollLeft += fila3.offsetWidth;
+
+    
+});
+
+flechaIzquierda3.addEventListener('click', () => {
+    fila3.scrollLeft -= fila3.offsetWidth;
+
+    
+});
+
+
+
+
+productos.forEach((producto) =>{
+    producto.addEventListener('mouseenter', (e) =>{
+        const elmento= e.currentTarget;
+        setTimeout(()=>{
+            productos.forEach(producto => producto.classList.remove('hover'));
+            elmento.classList.add('hover');
+        },300);
+    });
+});
+
+
+fila.addEventListener('mouseleave',()=>{
+    productos.forEach(producto => producto.classList.remove('hover'));
+})

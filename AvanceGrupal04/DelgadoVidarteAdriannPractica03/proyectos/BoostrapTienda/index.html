@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <title>Tienda</title>
+</head>
+
+<body>
+    <section id="cover" class="d-flex align-items-center">
+        <div id="cover-texto">
+            <div class="d-flex justify-content-center">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1 class="display-3">Veterinaria Mis 4Patas</h1>
+                        <p class="lead">Siempre a su servicio, a cualquier hora del día</p>
+                        <form  class="row gy-2 gx-3 align-items-center">
+                            <div class="col-auto">
+                                <label for="autoSizignInput" class="visually-hidden">Name</label>
+                                <input type="text" class="form-control" id="autoSizignInput" placeholder="Jane Doe">
+                            </div>
+                            <div class="col-auto">
+                                <lablel for="autoSizignInputGroup" class="visually-hidden">UserName</lablel>
+                                <div class="input-group">
+                                    <div class="input-group-text">@</div>
+                                    <input type="text" class="form-control" id="autoSizignInputGroup" placeholder="Username">
+                                </div>
+                            </div>
+                            <div class="col-auto">
+                                <button type="submit" class="btn btn-info">Suscribirme</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Menu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" aria-current="page"><i class="fa-solid fa-house"></i>Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="fa-solid fa-users-line"></i>Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link"><i class="fa-solid fa-list-check"></i>Servicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link disabled"><i class="fa-solid fa-mobile-screen-button"></i>Contactos</a>
+                        </li>
+                    </li>
+                </ul>
+                <form class="d-flex search" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                  
+                  <div>
+                    <input type="checkbox" class="checkbox" id="checkbox">
+                    <label for="checkbox" class="label">
+                      <i class="fas fa-moon"></i>
+                      <i class="fas fa-sun"></i>
+                      <div class="ball"></div>
+                    </label>
+                  </div>
+            </div>
+        </div>  
+
+    </nav>
+    <section class="align-items-center">
+        <div class="row -sm-12">
+            <div class="col-sm-4">
+                <ul class="list-group">
+                    <li class="list-group-item active" aria-current="true">Nuestro Servicio</li>
+                    <li class="list-group-item">Desparasitación</li>
+                    <li class="list-group-item">Vacunación</li>
+                    <li class="list-group-item">Baños Medicados</li>
+                    <li class="list-group-item">Hospitalización</li>
+                    <li class="list-group-item">Laboratorios</li>
+                    <li class="list-group-item">Emergencia</li>
+                    <li class="list-group-item">Tele consultas</li>
+                    <li class="list-group-item">Radiología</li>
+                </ul>
+            </div>
+           
+            <div class="col-sm-8 carousel">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="img/Razas-perros-elegantes-mundo_1621947844_145821806_1200x675.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/110415144733_perro_observador_304x171_bbc_nocredit.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="img/16456899624763.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+        
+    </section>
+    <hr>
+    <div class="row">
+        <h2 class="text">Acerca de Verinaria Mis 4Patas</h2>
+        <p class="text">Cuenta con 10 años de experiencia y siendo la mejor de la región de lambayeque</p>
+    </div>
+    <hr>
+    <section class="d-flex align-items-center">
+        <div class="card-group">
+            <div class="card col-sm-4">
+                <img src="img/images.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Alimentación</h5>
+                  <p class="card-text">Disponemos de las marcas lideres del mercado 
+                    en alimentación canina y felina
+                  </p>
+                  <a href="#" class="btn btn-primary">Ver mas</a>
+                </div>
+              </div>
+              <div class="card col-sm-4" >
+                <img src="img/como-dar-banho-cachorro-1-1200x900.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Baños</h5>
+                  <p class="card-text">Disponemos con  </p>
+                  <a href="#" class="btn btn-primary">Ver mas</a>
+                </div>
+              </div>
+              <div class="card col-sm-4" >
+                <img src="img/efectos-secundarios-vacunas-caninas.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Cirugía</h5>
+                  <p class="card-text">Nuestro equipo Cuenta con una excelente experiencia en el área quirúrgica</p>
+                  <a href="#" class="btn btn-primary">Ver mas</a>
+                </div>
+              </div>
+              <div class="card col-sm-4" >
+                <img src="img/vacunas-para-perros.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Vacunación</h5>
+                  <p class="card-text">Las vacunas disminuyen el riesgo de adquirir enfermedades infecto-contagiosas</p>
+                  <a href="#" class="btn btn-primary">Ver mas</a>
+                </div>
+              </div>
+        </div>
+    </section>
+    <hr>
+    <div class="row  bg-danger text-center justify-content-center">
+      <h1 >Contáctenos</h1>
+      <p>En Clínica Veterinaria "Mis 4Patas", nos sentimos comprometidos con la salud y el bienestar de su mascota; 
+        por eso, ponemos a su disposición lo mejor de nosotros para ofrecerle excelentes tratamientos veterinarios. Contáctenos en Carretera a Pimentel km 40,Chiclayo</p>
+        <a href="#contactar" class="btna">Contactar</a>
+    </div>
+    <div class="row">
+      <div class="row text-center">
+        <h1 class="text">¿Por qué elegirnos?</h1>
+      </div>
+      <div class="row ">
+        <div class="col text-center">
+          <i class="fa-solid fa-circle-check"></i>
+          <h2 class="text">Calidad Profesional</h2>
+          <p class="text">Para nosotros, Clínica Veterinaria “Mis 4Patas”, 
+            es muy importante brindarle los servicios que su mascota necesita para llevar una vida sana y confortable. 
+            Es por eso que en nuestro centro ofrecemos nuestro servicio de neurología veterinaria, radiología, análisis de laboratorio, consultas, farmacia, en otros más, que demuestran nuestra calidad profesional.</p>
+        </div>
+        <div class="col text-center">
+          <i class="fa-solid fa-thumbs-up"></i>
+          <h2 class="text">Trato personalizado</h2>
+          <p class="text">También le damos a su mascota baños temperados y medicados, los cuales son previa cita para que ella no se estrese esperando su turno.
+            Como puede apreciar, siempre pensamos en el bienestar de su mascota, lo que marca la diferencia con otras clínicas veterinarias. Queremos lo mejor para los animales, a los que les brindamos un trato personalizado, entregándoles profesionalismo y calidad. </p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="row mb-2" id="contactar">
+      <h2 style="font-size: 45px; text-align: center; padding-bottom: 25px;">Contactar</h2>
+      
+      <div class="col  col-sm-12 col-lg-6">
+        <img class="imagen" src="https://www.canalipe.tv/sites/default/files/styles/895x490/public/web/noticias/img_main/08-19/08-12-adopta.jpg?itok=zcUXQ3KJ" alt="">
+      </div>
+      <div class="col col-sm-12 col-lg-6 ">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Nombre</label>
+          <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Juan Perez Ramirez">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Email</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div>
+          <label for="exampleFormControlInput1" class="form-label">Servicio</label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Ninguno</option>
+            <option value="1">Alimentación</option>
+            <option value="2">Baños</option>
+            <option value="3">Cirugía</option>
+            <option value="4">Vacunación</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div>
+          <button style="border-radius: 15px;" class="btn btn-primary">Enviar</button>
+        </div>
+      </div>
+    </div>
+    <footer class="text-white text-center text-lg-start bg-dark">
+          <!-- Grid container -->
+          <div class="container p-4">
+            <!--Grid row-->
+            <div class="row mt-4">
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4 text">ACERCA DE LA VETERINARIA</h5>
+      
+                <p class="text">
+                  Somos La Clinica Veterinaria más especilizada con servicios integrales
+                  para su mascota de la Región Lambayeqye y todo el norte del país
+                </p>
+      
+                <div class="mt-4">
+                  <!-- Facebook -->
+                  <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-facebook-f"></i></a>
+                  <!-- Dribbble -->
+                  <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-dribbble"></i></a>
+                  <!-- Twitter -->
+                  <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-twitter"></i></a>
+                  <!-- Google + -->
+                  <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fab fa-google-plus-g"></i></a>
+                  <!-- Linkedin -->
+                </div>
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4 pb-1 text">UBICANOS EN</h5>
+    
+                <ul class="fa-ul" style="margin-left: 1.65em;">
+                  <li class="mb-3">
+                    <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">Carretera a Pimentel km 40,Chiclayo</span>
+                  </li>
+                  <li class="mb-3">
+                    <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">mis4patas@cuatropatas.com</span>
+                  </li>
+                  <li class="mb-3">
+                    <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 48 234 567 88</span>
+                  </li>
+                </ul>
+              </div>
+              <!--Grid column-->
+      
+              <!--Grid column-->
+              <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase mb-4 text">HORARIOS DE ATENCIÓN</h5>
+      
+                <table class="table text-center text-white">
+                  <tbody class="fw-normal">
+                    <tr>
+                      <td>Lun - Vie:</td>
+                      <td>8am - 9pm</td>
+                    </tr>
+                    <tr>
+                      <td>Sáb - Dom:</td>
+                      <td>8am - 1am</td>
+                    </tr>
+                    <tr>
+                      <td>Feriados:</td>
+                      <td>9am - 10pm</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!--Grid column-->
+            </div>
+            <!--Grid row-->
+          </div>
+          <!-- Grid container -->
+      
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/"> Adriann Delgado Vidarte</a>
+          </div>
+          <!-- Copyright -->
+    </footer>
+      
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://kit.fontawesome.com/0ea696cd02.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
