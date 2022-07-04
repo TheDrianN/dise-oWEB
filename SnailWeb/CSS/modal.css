@@ -5,7 +5,7 @@ section .modal {
 	position: fixed;
 	padding-top: 100px;	
 	display: flex;
-	animation: modal 4s 1s forwards;
+	animation: modal 7s 1s forwards;
 	opacity: 0;
 }
 

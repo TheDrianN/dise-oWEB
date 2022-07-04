@@ -4,7 +4,7 @@ function modal_01() {
         title: 'Compra finalizada',
         text: "Pago realizado con éxito!",
         showConfirmButton: true,
-        confirmButtonText: 'Aceptar',
+        confirmButtonText: '<a style="color: white; text-decoration: none;" class="inicio" href="../index.html">Aceptar</a>',
         confirmButtonColor: '#3085d6',
         allowOutsideClick: false
     });    

@@ -27,8 +27,8 @@ function modal_02() {
 function modal_03() {
     Swal.fire({
         icon: 'success',
-        title: 'Codigo finalizada',
-        text: "Se ah usado el codigo en su compra!",
+        title: 'Codigó Añadido',
+        text: "Se ha usado el codigó en su compra!",
         showConfirmButton: true,
         confirmButtonText: '<a style="color: white; text-decoration: none;" class="inicio" href="#">Aceptar</a>',
         confirmButtonColor: '#3085d6',

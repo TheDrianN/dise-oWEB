@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css">
+    <link rel="stylesheet" href="css/aniJs.css">
     <link rel="icon" href="img/iconoWEB.png">   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/index.css">
@@ -40,7 +42,7 @@
               <a class="btn btn-close" type="button" value="Cerrar" onclick="toggle(this)"></a>
             </div>
             <div class="modal-body">
-              <img src="img/imagen.jpeg" alt="">
+              <img src="img/modal-I.png" alt="">
             </div>
             <div class="modal-footer">
               <div>
@@ -145,7 +147,7 @@
                   <div class="caja">
                     <a class="nav-link dropdown-toggle tg" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       <i class="fa-solid fa-bars"></i>
-                      Todos las Categorias
+                      Todos las Categorías
                       </a>
                       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#"><img src="img/procesador.png" alt=""> PROCESADOR <i class="fas fa-caret-right"></i></a>
@@ -272,7 +274,7 @@
                   <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                 </li>
                 <li class="nav-item2">
-                  <a class="nav-link" href="Catalogo/catalogoWeb.html">Catalogo</a>
+                  <a class="nav-link" href="Catalogo/catalogoWeb.html">Catálogo</a>
                 </li>
                 <li class="nav-item3">
                   <a class="nav-link" href="OfertaDia/ofertaDia.html">Ofertas del Día</a>
@@ -327,8 +329,13 @@
             <div class="row imgP mb-4">
               <div class="col-lg-8 col-md-12">
                 <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                 
                   <div class="carousel-inner">
+                    
                     <div class="carousel-item active">
+                      <img src="https://drive.google.com/uc?export=download&id=1Veh0yBTlO5xiTtd2GiB3m8Q2uQDfP-c2"  width="100%" height="500px" style="border-radius:15px ;" alt="...">
+                    </div>
+                    <div class="carousel-item ">
                       <img src="https://drive.google.com/uc?export=download&id=1MugZ5NKBKxGrcwjLqnbIeLyPnHO_xg4E"  width="100%" height="500px" style="border-radius:15px ;" alt="...">
                     </div>
                     <div class="carousel-item">
@@ -352,6 +359,7 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                   </button>
+                 
                 </div>
               </div>
               <div class="col-lg-4 col-md-12">
@@ -964,7 +972,7 @@
             
           </div>
           <div class="col col-lg-6 col-sm-12 col-xs-12 for"><input class="form-control form-control2 me-2" type="email" placeholder="Micorreo@correo.com" aria-label="Search"></div>
-          <div class="button1 text-center col col-lg-2 col-sm-12 col-xs-12"><a href="#" onclick="modal_02()" style="color: #fff; text-decoration: none; font-size: 20px;">Suscribirse</a></div>
+          <div class="button1 text-center col col-lg-2 col-sm-12 col-xs-12" data-anijs="if: mouseover, do: tada animated"><a href="#" onclick="modal_02()" style="color: #fff; text-decoration: none; font-size: 21px;">Suscribirse</a></div>
            </div>
             
          
@@ -1037,6 +1045,11 @@
   </footer>
   
 
+<!-- AniJS core library -->
+<script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script> 
+  
+<!-- Include to use $addClass, $toggleClass or $removeClass -->
+<script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script> 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="JS/main.js"></script>
