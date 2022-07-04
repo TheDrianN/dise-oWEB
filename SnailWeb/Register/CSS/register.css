@@ -13,7 +13,7 @@ body{
     color: #fff;
     font-family: 'roboto';
     border-radius: 10px;
-    background-color: #2A363B;
+    background-color: #EB4A5F;
     color: #fff;
     text-align: center;
     height: 30px;
@@ -24,4 +24,7 @@ body{
     
     background-color: #4A6AEB;
     
+}
+.d-grid .volver{
+    background: #2A363B ;
 }

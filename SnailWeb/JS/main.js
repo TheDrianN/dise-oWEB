@@ -1,3 +1,4 @@
+
 /* carrito */
 let allcontainerCart = document.querySelector('.carousel-products');
 let buythings = [];
@@ -7,11 +8,21 @@ let amountProduct = document.querySelector('.count-product')
 let totalCard = 0;
 let countProduct=0;
 
+let allcontainerCart2 = document.querySelector('.carousel-products2');
+let allcontainerCart3 = document.querySelector('.carousel-products3');
+
+function pPagina(){
+   location.href="Producto/producto.html";
+}
 loadEventListenrs();
 function loadEventListenrs(){
     allcontainerCart.addEventListener('click',addProduct);
     containerBuyCart.addEventListener('click',deleteProduct);
+    allcontainerCart2.addEventListener('click',addProduct);
+    allcontainerCart3.addEventListener('click',addProduct);
 }
+
+
 
 function addProduct(e){
     e.preventDefault();
@@ -35,6 +46,11 @@ function deleteProduct(e){
         })
         
         buythings = buythings.filter(product => product.id !== deleteId);
+      
+          
+        localStorage.removeItem(deleteId);
+           
+      
     }
     loadHtml();
 }
@@ -47,7 +63,7 @@ function readTheContent(product){
         price: product.querySelector('.precio').textContent,
         code: product.querySelector('.codigo').textContent,
         stock: product.querySelector('.stock').textContent,
-        id: product.querySelector('button').getAttribute('data-id'),
+        id: product.querySelector('.btn-add-cart').getAttribute('data-id'),
         amount:1
     }
     totalCard =  parseFloat(totalCard) + parseFloat(infoProduct.price);
@@ -93,9 +109,25 @@ function loadHtml(){
        <span class="delete-product" data-id="${id}">X</span>       
        `;
        containerBuyCart.appendChild(row); 
-       
+       const datos = {
+        'nombre' : title,
+        'img' : image,
+        'precio': price,
+        'codigo': code,
+        'cantidad':amount,
+        
+        };
+
+       localStorage.setItem(id,JSON.stringify(datos));
        priceTotal.innerHTML = totalCard;
        amountProduct.innerHTML = countProduct;
+
+       document.getElementById('dato').innerHTML = `
+       <img class="modal-imagen" src="${image}">
+       <h5 class="modal-carrito" >${title}</h5>
+       <h4 class="">Precio:${price}</h4>    
+       `;
+
     });
    
 }
@@ -172,4 +204,9 @@ productos.forEach((producto) =>{
 
 fila.addEventListener('mouseleave',()=>{
     productos.forEach(producto => producto.classList.remove('hover'));
-})
+});
+
+function toggle(elemento) {
+    (elemento.value == "Cerrar")
+    document.getElementById("myModal").style.display = "none";
+}
