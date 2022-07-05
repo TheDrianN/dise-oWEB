@@ -382,6 +382,7 @@ margin-left: 11%;
       -webkit-box-shadow: 0px 0px 12px 0px rgba(92,85,78,0.8); 
 box-shadow: 0px 0px 20px 0px rgba(92,85,78,0.8);
 font-weight: bolder;
+height: 100%;
     }
 
     .cardP img{
@@ -445,5 +446,14 @@ font-weight: bolder;
     }
     
    
+}
+
+@media (max-width: 574px){
+
+        
+  .pagP{
+    margin-left: 20%;
+  }
+
 }
 

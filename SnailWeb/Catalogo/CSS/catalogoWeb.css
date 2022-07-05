@@ -354,6 +354,7 @@ margin-left: 11%;
       -webkit-box-shadow: 0px 0px 12px 0px rgba(92,85,78,0.8); 
 box-shadow: 0px 0px 20px 0px rgba(92,85,78,0.8);
 font-weight: bolder;
+height: 100%;
     }
 
     .cardP img{
@@ -516,5 +517,40 @@ color: #fff;
     }
     
    
+}
+@media (max-width: 766px){
+  .Productos-filtros{
+    margin-left: 1%;
+        }
+        .cajaFbtn{
+          margin-left: 40%;
+        }
+        .pagP{
+          margin-left: 30%;
+        }
+
+        .Productos-filtros .cardM, .cardC{
+          float: left;
+          width: 50%;
+          margin-bottom: 5%;
+        }
+}
+
+@media (max-width: 574px){
+  .Productos-filtros{
+    margin-left: 1%;
+        }
+        .cajaFbtn{
+          margin-left: 40%;
+        }
+        .pagP{
+          margin-left: 20%;
+        }
+
+        .Productos-filtros .cardM, .cardC{
+          float: left;
+          width: 100%;
+          margin-bottom: 5%;
+        }
 }
 

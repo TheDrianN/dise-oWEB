@@ -28,7 +28,7 @@ function recuperarDatos(){
             '<div class="codigo-pro stilo d-flex">'+'<h1  class="stilo2"> Codigo: </h1>'+datosJson.codigo+'</div>'+'<hr style="margin: 0;">'+
             '<div class="cantidad-pro stilo  d-flex">'+'<h1 class="stilo2"> Cantidad: </h1>'+datosJson.cantidad+'</div>'+ '<hr style="margin: 0;">'+
             '<div class="precio-pro stilo  d-flex">'+'<h1  class="stilo2"> Precio: </h1>'+ datosJson.precio+'</div>'+'</div>'+'<div class="boton-borrar">'+
-            `<a  id="borrar" onclick="eliminar()" data-id="${key}">X</a>`  +'</div>'+
+            `<a  id="borrar-btn" onclick="eliminar_btn()" data-id="${key}">X</a>`  +'</div>'+
              '</div> <br> <hr>'
             subtotal = parseFloat(datosJson.cantidad) * parseFloat(datosJson.precio);
             total = total + subtotal;
@@ -56,8 +56,8 @@ function eliminarTodo(){
     actualizarDatos();
 }
 
-function eliminar(){
-    var id = document.getElementById('borrar').getAttribute('data-id');
+function eliminar_btn(){
+    var id = document.getElementById('borrar-btn').getAttribute('data-id');
    
     localStorage.removeItem(id);
     recuperarDatos();

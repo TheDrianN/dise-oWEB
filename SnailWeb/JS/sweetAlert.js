@@ -35,3 +35,17 @@ function modal_03() {
         allowOutsideClick: false
     });    
 }
+
+function modal_04() {  
+    Swal.fire({
+        title: 'Advertencia',
+        text: "Se perderá todos los datos!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: '<a style="color: white; text-decoration: none; "  onclick="eliminarTodo()" class="inicio" href="../index.html">Regresar al inicio</a>',
+        cancelButtonText: 'Cancelar',
+        allowOutsideClick: false
+    });
+}
