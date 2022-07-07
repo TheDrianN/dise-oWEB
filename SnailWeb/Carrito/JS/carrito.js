@@ -53,7 +53,7 @@ function borrar(){
 }
 function eliminarTodo(){
     localStorage.clear();
-    actualizarDatos();
+    recuperarDatos();
 }
 
 function eliminar_btn(){
