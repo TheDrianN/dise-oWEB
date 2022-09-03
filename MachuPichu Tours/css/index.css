@@ -1,0 +1,253 @@
+:root{
+    --rosa: #EB4A5F;
+    --botonesvolver: #2A363B;
+    --botones: #4A6AEB;
+}
+
+.banner-image{
+    background-image: url('https://drive.google.com/uc?export=download&id=1Fl4Zfgk0bFT4vvw7e1ZoAhkTJjsSvB7m');
+    background-size: cover;
+    position: relative;
+   
+   
+}
+
+.banner-image::before{
+    content: "";
+    position: absolute;
+    background-color: var(--botonesvolver);
+    opacity: 0.7;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.banner-image h1{
+    font-size: 65px;
+    color: #fff ;
+    position: relative;
+    padding-bottom: 15px;
+}
+.banner-image p{
+    font-size: 35px;
+    color: #fff ;
+    position: relative;
+    padding-bottom: 15px;
+}
+.banner-image a{
+    font-size: 25px;
+    color: #fff ;
+    position: relative;
+    text-decoration: none;
+}
+.botn{
+    border: 2px solid #fff;
+    position: relative;
+    width: 150px;
+    margin: 0 auto;
+    border-radius: 15px;
+   background: var(--botonesvolver);
+}
+.botn:hover{
+    background: #fff;
+}
+.banner-image a:hover{
+    color: #4A6AEB;
+}
+.nav-item{
+    font-size: 20px;
+    padding: 5px;
+    
+}
+nav .collapse ul li a{
+    color: #fff;
+}
+.logo{
+    font-size: 20px;
+}
+
+nav .collapse ul li a:hover {
+    color: #4A6AEB;
+}
+nav .collapse ul li .activo{
+    background: #fff;
+    border-radius: 25px;
+    color: var(--botonesvolver) ;
+}
+
+/*btn flotante*/
+#btn-mas{
+    display: none;
+  }
+  .contenedor-flotante{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  .redes a, .btn-mas label{
+    display: block;
+    text-decoration: none;
+    background: var(--botones);
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    transition: all 500ms ease;
+  }
+  .redes a:hover{
+    background: #fff;
+    color: var(--botones);
+  }
+  .redes a{
+    margin-bottom: -15px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #btn-mas:checked~ .redes a{
+    margin-bottom: 10px;
+    opacity: 1;
+    visibility: visible;
+  }
+  .btn-mas label{
+    cursor: pointer;
+    background: var(--botonesvolver);
+    font-size: 23px;
+  }
+  #btn-mas:checked ~ .btn-mas label{
+    transform: rotate(135deg);
+    font-size: 25px;
+  }
+  
+
+  .carta{
+    
+    border-radius: 15px;
+  }
+  .carta:hover{
+    transform: scale(1.1);
+    border: 2px solid var(--botonesvolver);
+  }
+  .carta .imagen img{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 234px;
+  }
+
+  .banner-image2{
+    background-image: url('https://drive.google.com/uc?export=download&id=1mtP66I_9yrSMi200S5mSC8hEedcROUFK');
+    background-size: cover;
+    position: relative;
+    
+}
+
+.banner-image2::before{
+    content: "";
+    position: absolute;
+    background-color: var(--botonesvolver);
+    opacity: 0.7;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.contenido-im{
+ width: 320px;
+
+}
+.contenido-im h1{
+    width: 300px;
+    font-size: 40px;
+    color: #fff ;
+    position: relative;
+    
+}
+ #market{
+    width: 300px;
+    background: #EB4A5F;
+    height: 5px;
+    position: relative;
+    
+}
+.contenido-im p{
+    padding-top: 10px;
+    font-size: 20px;
+    color: #fff ;
+    position: relative;
+    
+}
+.cot{
+    height: 700px;
+    position: relative;
+}
+
+
+
+.carsuo{
+    margin-bottom: 15px;
+    height: 250px;
+}
+.carsuo img:hover{
+    transform: scale(1.1);
+}
+
+.carsuo img{
+    max-width: 100%;
+    width: 380px;
+    height: 250px;
+}
+
+footer{
+    position: relative;
+}
+.contenido{
+    padding: 15px;
+}
+.boton-c{
+    border: 2px solid #fff;
+   height: 35px;
+    width: 250px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    border-radius: 15px;
+   background: #db3434;
+   
+}
+.boton-c a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+.boton-c:hover{
+    background: #2A363B;
+}
+.boton-c a:hover{
+    color: #fff;
+}
+footer .btn-floating1:hover{
+    background: #4A6AEB;
+  color: #fff;
+}
+
+footer .btn-floating2:hover{
+    background:  #dd2a7b;
+    color: #fff;
+   }
+   footer .btn-floating3:hover{
+    background: #00acee;
+    color: #fff;
+   }
+   footer  .btn-floating4:hover{
+    background: #00bb2d;
+    color: #fff;
+   }
+  
+   footer .btn-floating:hover{
+    background: #572364;
+    color: #fff;
+   }
+  
