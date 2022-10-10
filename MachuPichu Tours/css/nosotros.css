@@ -1,0 +1,114 @@
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.banner-image{
+    height: 700px;
+    background-image: url('https://drive.google.com/uc?export=download&id=16IGi7I4ykb4cQPrjwD3mxU-M-e5TavDy');
+   background-size: cover;
+}
+
+.numero2{
+    text-decoration: none;
+    font-size: 25px;
+    color: #00bb2d;
+  }
+   
+   .bg{
+    background-image: url(../img/maps.png);
+    height: 300px;
+    border-radius: 25px;
+    border: 1px solid rgb(207, 201, 201);
+    margin: 0 auto;
+    margin-bottom: 25px;
+   } 
+   .numero{
+    height: 35px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 15px;
+    border-radius: 25px;
+    border: 1px solid rgb(207, 201, 201);
+   }
+   .control{
+    width: 98%;
+    background-color: var(--rosa);
+    margin: 15px;
+    border-radius: 10px;
+    border: none;
+    height: 40px;
+    }
+    .control:hover{
+      background-color: var(--botonesvolver);
+      color: #fff;
+      
+    }
+    .form-control{
+      width: 80%;
+      margin: 0 auto;
+    }
+  
+    ::placeholder{
+      color: white;
+      }
+  
+    .contacto{
+  
+      margin-top: 15px;
+      margin-bottom: 15px;
+      
+    }
+   
+    .btn_1:hover{
+      color: white;
+      background-color: #000;
+      }
+      
+      .btn_2:hover{
+      color: var(--rosa);
+      }
+      .caja-botones{
+  
+        padding-top: 15px;
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-between;
+      }
+      .btn_1{
+        background: var(--botones);
+        text-align: center;
+        border-radius: 10px;
+        color: white;
+        font-size: 20px;
+        width: 120px;
+        height: 30px;
+        border: none;
+        text-decoration: none;
+        }
+        
+        .btn_2{
+        background-color: var(--botonesvolver);
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        width: 120px;
+        border-radius: 10px;
+        text-decoration: none;
+        }
+        .dropdown-menu li {
+          position: relative;
+          }
+          .dropdown-menu .dropdown-submenu {
+          display: none;
+          position: absolute;
+          left: 100%;
+          top: -7px;
+          }
+          .dropdown-menu .dropdown-submenu-left {
+          right: 100%;
+          left: auto;
+          }
+          .dropdown-menu > li:hover > .dropdown-submenu {
+          display: block;
+          }

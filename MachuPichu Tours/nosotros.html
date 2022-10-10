@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/nosotros.css">
+ 
+    <link rel="stylesheet" href="https://anijs.github.io/lib/anicollection/anicollection.css">
+    <link rel="stylesheet" href="css/aniJs.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <title>Contactar</title>
+</head>
+<body>
+    <div class="contenedor-flotante">
+        <input type="checkbox" id="btn-mas">
+        <div class="redes">
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" alt="Whatsapp" class="fa fa-whatsapp"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-instagram"></a>
+        </div>
+        <div class="btn-mas">
+            <label for="btn-mas" class="fa fa-plus"></label>
+        </div>
+    </div>
+
+   
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+        <div class="container">
+            <a href="#" class="navbar-brand logo">Machu Picchu TOURS</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="mx-auto"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="Tours.html">Tours/Exploraciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link activo" href="#">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link ct" href="#">Contactar</a>
+            </li>
+          
+          </ul>
+        </div>
+        </div>
+    </nav>
+    
+    <div class="banner-image w-100 d-flex justify-content-center align-items-center">
+        <div class="content text-center">
+            <h1 id="texto3"></h1>
+            <p  style="font-size: 20px ;">Vive tus sueños descubriendo Machu Picchu y los más impresionantes destinos del Perú</p>
+            <p style="font-size: 20px ;">¡Reserva tu viaje a Machu Picchu  ahora y viaja después!</p>
+        </div>
+        <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+
+    </div>
+
+    <section class="container contacto">
+        <div class="card">
+          <div class="card-header text-center">
+            <h1>Formulario de Contacto</h1>
+          </div>
+          <div class="card-body">
+           <div class="row">
+            <div class="col col-lg-4 col-sm-12 col-xs-12 text-center" data-anijs="if: mouseenter, do:rollIn animated , to:.numero">
+              <div class="row bg"></div>
+              <div id="n1" class="row numero" data-anijs="if: click, do: hinge animated " > <a class="numero2" href="#"> <i class="fa-brands fa-whatsapp"></i> +51 123456789</a></div>
+              <div class="row numero" data-anijs="if:click, do: hinge animated, to:#n1"> <a class="numero2" href="#"> <i class="fa-brands fa-whatsapp"></i>   +51 123456789</a></div>
+            </div>
+            <div class="col col-lg-8 col-sm-12 col-xs-12 text-center">
+              <input class="control" type="text" name="nombre" placeholder=" Nombre"> 
+              <input class="control" type="text" name="apellido" placeholder=" Apellido">
+              <input class="control" type="text" name="email" placeholder=" micorreo@dominio.com">
+              <input class="control controls" type="text" name="telefono" placeholder=" Teléfono">
+              <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Escribe tu mensaje......." rows="9"></textarea>
+              <div class="d-flex caja-botones"><a href="#" onclick="modal_01()" class="btn_1" data-anijs="if: mouseover, do: tada animated">Enviar</a> <a class="btn_2" href="../index.html">Volver</a></div>
+            </div>
+           </div>
+          </div>
+        </div>
+      </section>
+
+    <footer class="text-white text-center text-lg-start bg-dark">
+       
+        <div class="container p-4">
+      
+          <div class="row mt-4">
+            
+            <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4">ACERCA DE NOSOTROS</h5>
+    
+              <p>
+                Snail es una empresa que se dedica a la venta online de una amplia gama de productos de calidad de electrónica en Lambayeque - Chiclayo.
+              </p>
+    
+              
+            </div>
+          
+    
+           
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4 pb-1">MEDIOS DE PAGO</h5>
+  
+              <div class="mt-4">
+               
+                <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fa-brands fa-cc-visa"></i></a>
+              
+                <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fa-brands fa-cc-mastercard"></i></a>
+               
+                <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fa-brands fa-paypal"></i></a>
+                
+                <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fa-solid fa-money-bill-1"></i></a>
+               
+                <a type="button" class="btn btn-floating btn-light btn-lg"><i class="fa-brands fa-cc-amex"></i></a>
+              </div>
+            </div>
+            
+           
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+              <h5 class="text-uppercase mb-4">CONTACTANOS</h5>
+    
+              <div class="mt-4">
+                
+                <a type="button" class="btn btn-floating1 btn-light btn-lg"><i class="fab fa-facebook-f"></i></a>
+                
+                <a type="button" class="btn btn-floating2 btn-light btn-lg"><i class="fa-brands fa-instagram"></i></a>
+               
+                <a type="button" class="btn btn-floating3 btn-light btn-lg"><i class="fab fa-twitter"></i></a>
+                
+                <a type="button" class="btn btn-floating4 btn-light btn-lg"><i class="fa-brands fa-whatsapp"></i></a>
+                
+              </div>
+            </div>
+           
+          </div>
+          
+        </div>
+        
+    
+       
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Web Master:
+          <a class="text-white" href="">TheDrianN</a><br>
+          Ultima Actualización: 12/07/2022
+        </div>
+    
+  </footer>
+
+      <!-- AniJS core library -->
+      <script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script> 
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+          AOS.init();
+        </script>
+      <!-- Include to use $addClass, $toggleClass or $removeClass -->
+      <script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script> 
+      <script src="js/main.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://kit.fontawesome.com/0ea696cd02.js" crossorigin="anonymous"></script>
+      <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script src="JS/sweetAlert.js"></script>
+</body>
+</html>

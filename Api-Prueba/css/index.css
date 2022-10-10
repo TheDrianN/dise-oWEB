@@ -1,0 +1,89 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	background: #e0e0e0;
+	color: #1d1d1d;
+}
+.navbar{
+    background: #100a1f;
+}
+.activo{
+  color: #fff;
+}
+.logo{
+    font-size: 30px;
+}
+.nav-link{
+    font-size: 20px;
+   
+}
+section{
+    height: 360px;
+}
+.fondo{
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(1,180,228, 0.8 ) 0%, rgba(1,180,228, 0) 100%), url(../recursos/El-poster-de-la-pelicula-Bullet-Train-une-al-asesino.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+div.column_wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+div.content_wrapper{
+    flex-wrap: wrap;
+}
+.title{
+    color: #fff;
+}
+div.content_wrapper{
+    max-width: 1400px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+form{
+    margin-top: 30px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+input[type=text]{
+    width: 1100px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 1.1em;
+    color: rgba(0,0,0,0.5);
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+}
+
+input[type=submit]{
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 46px;
+    padding: 10px 26px;
+    border: none;
+    background: linear-gradient(to right, rgba(30,213,169, 1) 0%, rgba(1,180,228, 1) 100%);
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    right: -1px;
+    color: #fff;
+}
