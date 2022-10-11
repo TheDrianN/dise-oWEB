@@ -23,4 +23,3 @@ while intentos < 8:
     
 if num_u != num:
         print(f"Se acabaron tus intentos :c, el numero era {num}")   
-#for

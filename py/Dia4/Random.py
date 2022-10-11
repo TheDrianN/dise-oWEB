@@ -15,3 +15,5 @@ print(aletorio)
 #Metodo shuffle mezclar aletorio, nose puede almancenar  cambia la lista
 numeros = list(range(5,50),5)
 shuffle(numeros)
+
+
